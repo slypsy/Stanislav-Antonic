@@ -1,0 +1,22 @@
+.albums {
+  h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .grid-item {
+    width:100%;
+    margin-top: 3.5%;
+    @include breakpoint($sm){
+      width: 48.25%;
+    }
+    @include breakpoint($lg){
+      width: 31%;
+    }
+  }
+  .gutter-sizer {
+    width: 3.5%;
+  }
+}

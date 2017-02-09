@@ -1,0 +1,60 @@
+.navbar-default {
+  background-color: #ffffff;
+  border-color: transparent;
+  border-bottom: 1px solid #333333;
+  border-radius: 0; }
+  .navbar-default .navbar-brand {
+    font-size: 24px;
+    color: #333333; }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+      color: #5e5e5e;
+      background-color: transparent; }
+  .navbar-default .navbar-nav > li > a {
+    color: #333333;
+    text-transform: uppercase;
+    padding-right: 0; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+      color: #e72800;
+      background-color: transparent; }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #333333;
+    background-color: transparent;
+    background: none;
+    font-weight: bold;
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .navbar-default .navbar-nav > .active > a,
+      .navbar-default .navbar-nav > .active > a:hover,
+      .navbar-default .navbar-nav > .active > a:focus {
+        background: url("/img/active.png") no-repeat center bottom;
+        font-weight: normal; } }
+  .navbar-default .navbar-toggle {
+    border-color: #ddd; }
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #ffffff; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #333333; }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #333333; }
+
+.albums h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 20px; }
+
+.albums .grid-item {
+  width: 100%;
+  margin-top: 3.5%; }
+  @media (min-width: 768px) {
+    .albums .grid-item {
+      width: 48.25%; } }
+  @media (min-width: 1200px) {
+    .albums .grid-item {
+      width: 31%; } }
+
+.albums .gutter-sizer {
+  width: 3.5%; }

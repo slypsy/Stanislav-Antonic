@@ -1,0 +1,53 @@
+.navbar-default {
+  background-color: $white;
+  border-color: transparent;
+  border-bottom: 1px solid $darkgray;
+  border-radius: 0;
+  .navbar-brand {
+    font-size: 24px;
+    //text-transform: uppercase;
+    color: $darkgray;
+    &:hover, &:focus {
+      color: #5e5e5e;
+      background-color: transparent;
+    }
+  }
+  .navbar-nav > li > a {
+    color: $darkgray ;
+    text-transform: uppercase;
+    padding-right: 0;
+    &:hover, &:focus {
+      color: #e72800;
+      background-color: transparent;
+    }
+  }
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:hover,
+  .navbar-nav > .active > a:focus {
+    color: $darkgray;
+    background-color: transparent;
+    background: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    @include breakpoint($sm) {
+      background: url("/img/active.png") no-repeat center bottom ;
+      font-weight: normal;
+    }
+  }
+  .navbar-toggle {
+    border-color: #ddd;
+  }
+  .navbar-toggle:hover, .navbar-toggle:focus {
+    background-color: $white;
+  }
+  .navbar-toggle .icon-bar {
+    background-color: $darkgray;
+  }
+  .navbar-collapse, .navbar-form {
+    border-color: $darkgray;
+
+  }
+}
+
+
+
