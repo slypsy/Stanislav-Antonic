@@ -25,7 +25,7 @@ gulp.task('html-import', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['sass'], function() {
+gulp.task('default', ['sass', 'html-import'], function() {
     browserSync.init({
         server: {
             baseDir: "./dist"

@@ -21,7 +21,7 @@
     </div>
     <div class="container">
        <div class="albums">
-           <h5 >Albums</h5>
+           <h5>Albums</h5>
            <div class="grid">
                <div class="gutter-sizer"></div>
                @import "home-album.html"
@@ -33,15 +33,14 @@
            </div>
        </div>
     </div>
-
+    @import "footer.html"
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script>
+        //debugger;
         $(function () {
             $('.grid').isotope({
                 // options
@@ -52,7 +51,23 @@
                     gutter: '.gutter-sizer'
                 }
             });
+            TweenLite.from(".navbar-brand", 0.5, {fontSize: 0});
+            var tl = null;
+            $('.grid-item').hover(function () {
+                tl = new TimelineLite();
+                tl.fromTo($(this), 0.3, {scale: 1}, {scale: 1.0});
+                tl.fromTo($(this).find('.hover'), 0.3, {opacity: 0}, {opacity: 1},'-=0.2');
+                tl.fromTo($(this).find('.hover h4'), 0.3, {opacity: 0, }, {opacity: 1});
+                tl.fromTo($(this).find('.hover .line'), 0.3, {opacity: 0, width: '0%',}, {opacity: 1, width: '60%'}, '-=0.1');
+                tl.fromTo($(this).find('.hover h5'), 0.3, {opacity: 0}, {opacity: 1}, '-=0.05');
+                tl.play();
+            }, function () {
+                tl.reverse();
+                tl.timeScale(2);
+            })
+
         })
     </script>
+
 </body>
 </html>
