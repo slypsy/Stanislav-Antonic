@@ -100,9 +100,13 @@
   margin-bottom: 20px; }
 
 .stanislav {
+  width: 100%;
   float: left;
   margin-right: 10px;
   margin-bottom: 10px; }
+  @media (min-width: 992px) {
+    .stanislav {
+      width: 50%; } }
 
 .copy {
   background-color: #000;
