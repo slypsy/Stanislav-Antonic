@@ -55,9 +55,9 @@
             var tl = null;
             $('.grid-item').hover(function () {
                 tl = new TimelineLite();
-                tl.fromTo($(this), 0.3, {scale: 1}, {scale: 1.0});
+                tl.fromTo($(this), 0.2, {scale: 1}, {scale: 1.0});
                 tl.fromTo($(this).find('.hover'), 0.3, {opacity: 0}, {opacity: 1},'-=0.2');
-                tl.fromTo($(this).find('.hover h4'), 0.3, {opacity: 0, }, {opacity: 1});
+                tl.fromTo($(this).find('.hover h4'), 0.2, {opacity: 0, }, {opacity: 1});
                 tl.fromTo($(this).find('.hover .line'), 0.3, {opacity: 0, width: '0%',}, {opacity: 1, width: '60%'}, '-=0.1');
                 tl.fromTo($(this).find('.hover h5'), 0.3, {opacity: 0}, {opacity: 1}, '-=0.05');
                 tl.play();

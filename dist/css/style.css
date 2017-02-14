@@ -63,7 +63,8 @@
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
-    opacity: 0; }
+    opacity: 0;
+    cursor: pointer; }
     .albums .grid-item .hover .wrapper-outer {
       display: table;
       height: 100%;
@@ -93,10 +94,22 @@
 .albums .gutter-sizer {
   width: 3.5%; }
 
+.biography {
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 20px; }
+
+.stanislav {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
 .copy {
   background-color: #000;
   padding: 10px 0;
   margin-top: 40px; }
+  .copy .social-icon {
+    text-align: center; }
   .copy p {
     text-align: center;
     color: #ffffff;

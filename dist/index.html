@@ -27,9 +27,9 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Biography</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="active"><a href="#">POČETNA</a></li>
+                <li><a href="biography.html">BIOGRAFIJA</a></li>
+                <li><a href="#">KONTAKT</a></li>
             </ul>
         </div>
     </div>
@@ -120,6 +120,11 @@
        </div>
     </div>
     <div class="copy">
+    <div class="social-icon">
+        <a href="#facebook">
+            <img src="/img/facebook2.png" alt=""/>
+        </a>
+    </div>
     <p>Copyright © 2017 tamarakovacev13@gmail.com</p>
 </div>
 
@@ -145,9 +150,9 @@
             var tl = null;
             $('.grid-item').hover(function () {
                 tl = new TimelineLite();
-                tl.fromTo($(this), 0.3, {scale: 1}, {scale: 1.0});
+                tl.fromTo($(this), 0.2, {scale: 1}, {scale: 1.0});
                 tl.fromTo($(this).find('.hover'), 0.3, {opacity: 0}, {opacity: 1},'-=0.2');
-                tl.fromTo($(this).find('.hover h4'), 0.3, {opacity: 0, }, {opacity: 1});
+                tl.fromTo($(this).find('.hover h4'), 0.2, {opacity: 0, }, {opacity: 1});
                 tl.fromTo($(this).find('.hover .line'), 0.3, {opacity: 0, width: '0%',}, {opacity: 1, width: '60%'}, '-=0.1');
                 tl.fromTo($(this).find('.hover h5'), 0.3, {opacity: 0}, {opacity: 1}, '-=0.05');
                 tl.play();
