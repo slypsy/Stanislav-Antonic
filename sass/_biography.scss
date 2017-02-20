@@ -2,13 +2,35 @@
   font-size: 20px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
+  color: #444444;
+ 
+
 }
 .stanislav {
   width: 100%;
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
+  border-bottom: 5px solid white;
+  margin-top: 20px;
   @include breakpoint($md) {
-    width: 50%;
+    width: 51%;
+    border-right: 5px solid white;
+    border-bottom: none;
+
   }
+}
+h3 {
+  font-weight: bold;
+  color: #444444;
+  @include breakpoint($md) {
+    margin-top: 0;
+  }
+  @include breakpoint($lg) {
+    margin-top: 20px;
+  }
+}
+.style {
+  color: #444444;
+  padding: 3px;
 }

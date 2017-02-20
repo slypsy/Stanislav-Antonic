@@ -1,11 +1,29 @@
+.h5-album {
+  border-bottom: 2px dotted black;
+  .h5-name {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left;
+  }
+}
+
 .albums {
   h5 {
     text-transform: uppercase;
     font-weight: bold;
-    text-decoration: underline;
+    //text-decoration: underline;
     text-align: center;
     margin-top: 20px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+  }
+  .img-hover {
+    display: block;
+    .img-responsive {
+      display: block;
+
+    }
   }
   .grid-item {
     width:100%;
@@ -25,6 +43,8 @@
       top: 0;
       opacity: 0;
       cursor: pointer;
+
+
       .wrapper-outer {
         display: table;
         height: 100%;
@@ -62,5 +82,8 @@
   }
   .gutter-sizer {
     width: 3.5%;
+  }
+  .space {
+    height: 40px;
   }
 }

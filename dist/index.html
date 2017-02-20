@@ -23,7 +23,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Stanislav Antonić</a>
+            <a class="navbar-brand" href="index.html">Stanislav Antonić</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -36,16 +36,21 @@
 </nav>
     <div class="container">
         <div class="cover-img">
-            <img class="img-responsive" src="img/cover1.png" alt="">
+            <img class="img-album" src="img/cover5.jpg" alt="">
         </div>
     </div>
     <div class="container">
        <div class="albums">
-           <h5>Albums</h5>
+           <div class="h5-album">
+               <h5 class="h5-name">Albums</h5>
+           </div>
+
            <div class="grid">
                <div class="gutter-sizer"></div>
                <div class="grid-item">
-    <img class="img-responsive" src="/img/album-1.jpg"/>
+    <div class="img-hover">
+        <img class="img-responsive" src="/img/album-1.jpg"/>
+    </div>
     <div class="hover">
         <div class="wrapper-outer">
             <div class="wrapper-inner">
@@ -57,7 +62,9 @@
     </div>
 </div>
                <div class="grid-item">
-    <img class="img-responsive" src="/img/album-1.jpg"/>
+    <div class="img-hover">
+        <img class="img-responsive" src="/img/album-1.jpg"/>
+    </div>
     <div class="hover">
         <div class="wrapper-outer">
             <div class="wrapper-inner">
@@ -69,7 +76,9 @@
     </div>
 </div>
                <div class="grid-item">
-    <img class="img-responsive" src="/img/album-1.jpg"/>
+    <div class="img-hover">
+        <img class="img-responsive" src="/img/album-1.jpg"/>
+    </div>
     <div class="hover">
         <div class="wrapper-outer">
             <div class="wrapper-inner">
@@ -81,7 +90,9 @@
     </div>
 </div>
                <div class="grid-item">
-    <img class="img-responsive" src="/img/album-1.jpg"/>
+    <div class="img-hover">
+        <img class="img-responsive" src="/img/album-1.jpg"/>
+    </div>
     <div class="hover">
         <div class="wrapper-outer">
             <div class="wrapper-inner">
@@ -93,7 +104,9 @@
     </div>
 </div>
                <div class="grid-item">
-    <img class="img-responsive" src="/img/album-1.jpg"/>
+    <div class="img-hover">
+        <img class="img-responsive" src="/img/album-1.jpg"/>
+    </div>
     <div class="hover">
         <div class="wrapper-outer">
             <div class="wrapper-inner">
@@ -105,7 +118,9 @@
     </div>
 </div>
                <div class="grid-item">
-    <img class="img-responsive" src="/img/album-1.jpg"/>
+    <div class="img-hover">
+        <img class="img-responsive" src="/img/album-1.jpg"/>
+    </div>
     <div class="hover">
         <div class="wrapper-outer">
             <div class="wrapper-inner">
@@ -117,11 +132,13 @@
     </div>
 </div>
            </div>
+           <div class="space"></div>
        </div>
     </div>
+
     <div class="copy">
     <div class="social-icon">
-        <a href="#facebook">
+        <a href="https://www.facebook.com/StanislavAntonicArt/">
             <img src="/img/facebook2.png" alt=""/>
         </a>
     </div>
@@ -151,6 +168,7 @@
             $('.grid-item').hover(function () {
                 tl = new TimelineLite();
                 tl.fromTo($(this), 0.2, {scale: 1}, {scale: 1.0});
+                tl.fromTo($(this).find('.img-hover'), 0.2, {scale: 1}, {scale: 1.02});
                 tl.fromTo($(this).find('.hover'), 0.3, {opacity: 0}, {opacity: 1},'-=0.2');
                 tl.fromTo($(this).find('.hover h4'), 0.2, {opacity: 0, }, {opacity: 1});
                 tl.fromTo($(this).find('.hover .line'), 0.3, {opacity: 0, width: '0%',}, {opacity: 1, width: '60%'}, '-=0.1');

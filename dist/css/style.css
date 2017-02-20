@@ -2,7 +2,8 @@
   background-color: #ffffff;
   border-color: transparent;
   border-bottom: 1px solid #333333;
-  border-radius: 0; }
+  border-radius: 0;
+  margin-bottom: 0; }
   .navbar-default .navbar-brand {
     font-size: 24px;
     color: #333333; }
@@ -39,13 +40,31 @@
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #333333; }
 
+.img-album {
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  margin-top: 20px; }
+
+.h5-album {
+  border-bottom: 2px dotted black; }
+  .h5-album .h5-name {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left; }
+
 .albums h5 {
   text-transform: uppercase;
   font-weight: bold;
-  text-decoration: underline;
   text-align: center;
   margin-top: 20px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px; }
+
+.albums .img-hover {
+  display: block; }
+  .albums .img-hover .img-responsive {
+    display: block; }
 
 .albums .grid-item {
   width: 100%;
@@ -94,24 +113,83 @@
 .albums .gutter-sizer {
   width: 3.5%; }
 
+.albums .space {
+  height: 40px; }
+
 .biography {
   font-size: 20px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  color: #444444; }
 
 .stanislav {
   width: 100%;
   float: left;
   margin-right: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border-bottom: 5px solid white;
+  margin-top: 20px; }
   @media (min-width: 992px) {
     .stanislav {
-      width: 50%; } }
+      width: 51%;
+      border-right: 5px solid white;
+      border-bottom: none; } }
+
+h3 {
+  font-weight: bold;
+  color: #444444; }
+  @media (min-width: 992px) {
+    h3 {
+      margin-top: 0; } }
+  @media (min-width: 1200px) {
+    h3 {
+      margin-top: 20px; } }
+
+.style {
+  color: #444444;
+  padding: 3px; }
+
+.kontakt {
+  position: relative; }
+  .kontakt #pozadina {
+    display: inline-block;
+    width: 100%;
+    opacity: 0.2;
+    height: auto; }
+  .kontakt .mail {
+    color: #444444;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    font-size: 18px; }
+    @media (min-width: 768px) {
+      .kontakt .mail {
+        font-size: 30px; } }
+    .kontakt .mail span {
+      color: #444444;
+      font-weight: bold; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin: 0 0 80px;
+  /* bottom = footer height */ }
 
 .copy {
   background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
   padding: 10px 0;
-  margin-top: 40px; }
+  margin-top: 40px;
+  border-top: 20px solid white; }
   .copy .social-icon {
     text-align: center; }
   .copy p {
