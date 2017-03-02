@@ -1,22 +1,9 @@
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  margin: 0 0 80px; /* bottom = footer height */
-
-}
 .copy {
   background-color: #000;
   position: absolute;
-  left: 0;
   bottom: 0;
-  height: 100px;
   width: 100%;
-  overflow:hidden;
   padding: 10px 0;
-  margin-top: 40px;
-  border-top: 20px solid white;
   .social-icon {
     text-align: center;
   }

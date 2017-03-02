@@ -9,7 +9,8 @@ gulp.task('sass', function () {
         .pipe(sass({
             //outputStyle: 'compressed',
             includePaths: [
-                'node_modules/breakpoint-sass/stylesheets'
+                'node_modules/breakpoint-sass/stylesheets',
+                'node_modules/bootstrap-sass/assets/stylesheets'
             ]
         }).on('error', sass.logError))
         .pipe(autoprefixer({
