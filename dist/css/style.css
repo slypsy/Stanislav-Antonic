@@ -5873,7 +5873,8 @@ hr {
   font-size: 16px; }
 
 .kontakt {
-  position: relative; }
+  position: relative;
+  height: 600px; }
   .kontakt #pozadina {
     display: inline-block;
     width: 100%;
